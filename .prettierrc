@@ -1,0 +1,19 @@
+{
+    "endOfLine": "lf",
+    "bracketSpacing": true,
+    "jsxBracketSameLine": false,
+    "printWidth": 500,
+    "semi": true,
+    "singleQuote": false,
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "overrides": [
+        {
+            "files": "*.hbs",
+            "options": {
+                "singleQuote": false,
+                "parser": "html"
+            }
+        }
+    ]
+}

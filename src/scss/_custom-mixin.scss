@@ -1,0 +1,109 @@
+/*Variables*/
+$red: #ed222e;
+$koyugri: #888993;
+$acikgri: #e7e7e9;
+$sub-header: #6e8089;
+
+:root {
+    --navbar-back-color: #e7e7e9;
+    --hamburger-line-color: #ed222e;
+    --slider-dot: #ed222e;
+    --navbar-border-bottom: #888993;
+    /* 
+    .fp-viewing-0 {
+        --navbar-back-color: transparent;
+        --hamburger-line-color: #ffffff;
+        --logo-color-I: #ffffff;
+        --logo-color-II: #ffffff;
+        --slider-dot: #ffffff;
+        --navbar-border-bottom: transparent;
+    }
+    nav.turuncu-back {
+        --navbar-back-color: #f27333;
+        --hamburger-line-color: #ffffff;
+        --logo-color-I: #ffffff;
+        --logo-color-II: #ffffff;
+        --slider-dot: #ffffff;
+        --navbar-border-bottom: transparent;
+    } 
+    */
+}
+
+/*breakpoint variables*/
+$xmobile-width: 425px;
+$mobile-width: 576px;
+$tablet-width: 768px;
+$smalldesktop-width: 992px;
+$desktop-width: 1200px;
+
+/* mixin media queries	*/
+@mixin xsm {
+    @media (min-width: #{$xmobile-width}) and (max-width: #{$mobile-width - .02px}) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width - .02px}) {
+        @content;
+    }
+}
+@mixin md {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$smalldesktop-width - .02px}) {
+        @content;
+    }
+}
+@mixin lg {
+    @media (min-width: #{$smalldesktop-width}) and (max-width: #{$desktop-width - .02px}) {
+        @content;
+    }
+}
+@mixin xl {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+@mixin min-lg {
+    @media (min-width: #{$smalldesktop-width}) {
+        @content;
+    }
+}
+@mixin min-md {
+    @media (min-width: #{$tablet-width}) {
+        @content;
+    }
+}
+@mixin min-sm {
+    @media (min-width: #{$mobile-width}) {
+        @content;
+    }
+}
+@mixin min-xsm {
+    @media (min-width: #{$xmobile-width}) {
+        @content;
+    }
+}
+@mixin max-xl {
+    @media (max-width: #{$desktop-width - .02px}) {
+        @content;
+    }
+}
+@mixin max-lg {
+    @media (max-width: #{$smalldesktop-width - .02px}) {
+        @content;
+    }
+}
+@mixin max-md {
+    @media (max-width: #{$tablet-width - .02px}) {
+        @content;
+    }
+}
+@mixin max-sm {
+    @media (max-width: #{$mobile-width - .02px}) {
+        @content;
+    }
+}
+@mixin max-xsm {
+    @media (max-width: #{$xmobile-width - .02px}) {
+        @content;
+    }
+}
