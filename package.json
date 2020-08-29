@@ -15,10 +15,8 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.12.0",
     "autoprefixer": "^9.7.4",
-    "bootstrap": "^4.4.1",
-    "fullpage.js": "2.9.6",
-    "jquery": "^3.5.0",
-    "popper.js": "^1.16.1",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
     "postcss-modules": "^1.5.0",
     "tiny-slider": "^2.9.2"
   },
@@ -26,10 +24,6 @@
     "@native_finance/parcel-plugin-handlebars": "^0.8.3",
     "front-matter": "^2.3.0",
     "handlebars": "^4.0.11",
-    "handlebars-helper-svg": "^2.0.2",
-    "handlebars-helpers": "^0.10.0",
-    "handlebars-layouts": "^3.1.4",
-    "handlebars-wax": "^6.1.0",
     "lodash.escaperegexp": "^4.1.2",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-imagemin": "^4.0.1",
