@@ -1,3 +1,6 @@
-node_modules
 .DS_Store
+.cache
 .vscode
+development
+dist
+node_modules
