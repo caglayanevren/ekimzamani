@@ -1,13 +1,6 @@
 /* purgecss start ignore */
-html.fp-enabled {
-    body {
-        padding-top: 0;
-    }
-}
-
 body {
-    font-family: "Dosis", sans-serif;
-    padding-top: 55px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .light {
@@ -63,58 +56,32 @@ a {
 
     &:hover,
     &:focus {
-        color: $red;
+        color: $sv-mavi;
         text-decoration: underline;
     }
 }
+    .sv-header-back {
+        background-color: $sv-mavi;
+    }
+    
+    .sv-header-back-80 {
+        background-color: $sv-mavi-80;
+    }
 
 #nav.navbar {
-    position: fixed;
     z-index: 999;
     width: 100%;
-    display: flex;
-    padding: 0;
-    top: 0;
     background-color: var(--navbar-back-color);
     border-bottom: 1px solid var(--navbar-border-bottom);
-
-    .collapse-menu {
-        position: fixed;
-        opacity: 1;
-        width: 100%;
-        height: calc(100% - 55px);
-        top: 55px;
-        left: 100%;
-        right: 100%;
-        overflow-y: auto;
-        background-color: $red;
-        transition: all 0.2s ease-in-out;
-
-        &.show {
-            left: 0;
-            right: 0;
-        }
-
-        .container-fluid {
-            height: 100%;
-        }
-
-        .container {
-            display: block !important;
-        }
-    }
 
     .hamburger {
         padding: 15px 15px 8px;
     }
-}
 
-#fullpage {
-    .section {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .dropdown-menu {
+        margin-top:-0.2rem;
     }
+
 }
 
 .tns-nav {
@@ -128,10 +95,10 @@ a {
         margin-left: 5px;
         margin-right: 5px;
         border: 2px solid $white;
-        background-color: $koyugri;
+        background-color: rgba($sv-yesil, .5);
 
         &.tns-nav-active {
-            background-color: $red;
+            background-color: $sv-yesil;
         }
     }
 }
@@ -144,5 +111,9 @@ a:hover {
     span {
         text-decoration: none !important;
     }
+}
+
+.fa-14x {
+    font-size:1.4rem;
 }
 /* purgecss end ignore */

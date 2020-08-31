@@ -4,29 +4,16 @@ $koyugri: #888993;
 $acikgri: #e7e7e9;
 $sub-header: #6e8089;
 
+$sv-yesil: #00b159;
+$sv-mavi: #00529f;
+$sv-mavi-80: rgba(#00529f,.8);
+
 :root {
+    --sv-header-back-color: #00529f;
     --navbar-back-color: #e7e7e9;
     --hamburger-line-color: #ed222e;
     --slider-dot: #ed222e;
     --navbar-border-bottom: #888993;
-    /* 
-    .fp-viewing-0 {
-        --navbar-back-color: transparent;
-        --hamburger-line-color: #ffffff;
-        --logo-color-I: #ffffff;
-        --logo-color-II: #ffffff;
-        --slider-dot: #ffffff;
-        --navbar-border-bottom: transparent;
-    }
-    nav.turuncu-back {
-        --navbar-back-color: #f27333;
-        --hamburger-line-color: #ffffff;
-        --logo-color-I: #ffffff;
-        --logo-color-II: #ffffff;
-        --slider-dot: #ffffff;
-        --navbar-border-bottom: transparent;
-    } 
-    */
 }
 
 /*breakpoint variables*/

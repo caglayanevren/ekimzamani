@@ -4,11 +4,15 @@
 
 <body>
     {{> browser-upgrade-tr}}
-    {{> navigasyon}}
+    <header>
+        {{> sabanci-vakfi-header}}
+        {{> navigasyon}}
+    </header>
     <!-- /main-container -->
     {{#block "main"}}
     {{/block}}
     <!-- /main-container -->
+    {{> sabanci-vakfi-footer}}
     <script src="{{ script }}"></script>
 </body>
 
