@@ -1,4 +1,31 @@
 /* purgecss start ignore */
+@font-face {
+    font-family: 'odudo_slabbold';
+    src: url('../fonts/odudo-slab-bold-webfont.woff2') format('woff2'),
+        url('../fonts/odudo-slab-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'odudo_slablight';
+    src: url('../fonts/odudo-slab-light-webfont.woff2') format('woff2'),
+        url('../fonts/odudo-slab-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'odudo_slabsemi_bold';
+    src: url('../fonts/odudo-slab-semi-bold-webfont.woff2') format('woff2'),
+        url('../fonts/odudo-slab-semi-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     font-family: "Montserrat", sans-serif;
 }
@@ -74,11 +101,33 @@ a {
     background-color: $sv-mavi-80;
 }
 
+.border-bottom-yesil {
+    position: relative;
+    display: inline-block;
+}
+
+.border-bottom-yesil::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: $yesil-grad;
+}
+
+.color-kahve {
+    color: $sv-kahve;
+}
+
+.color-yesil {
+    color: $sv-yesil;
+}
+
 #nav.navbar {
     z-index: 999;
     width: 100%;
     background-color: var(--navbar-back-color);
-    //border-bottom: 1px solid var(--navbar-border-bottom);
     padding: 0 1rem;
 
     .hamburger {
@@ -155,8 +204,110 @@ a {
                 font-weight: 500;
             }
         }
+
+        a.nav-link div {
+            position: relative;
+        }
+
+        a.nav-link:hover div::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background: $yesil-grad;
+        }
+
+        .nav-item.dropdown.show {
+            .nav-link div::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                height: 2px;
+                width: 100%;
+                background: $yesil-grad;
+            }
+        }
+
     }
 
+}
+
+.tns-controls {
+    position: absolute;
+    top: calc(50% - 14px);
+    width: calc(100% - 30px);
+
+    @include max-sm {
+        width: calc(100% - 60px);
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+
+    button {
+        background-color: transparent;
+        border: 0;
+
+        &[data-controls=prev] {
+            img {
+                margin-left: -45px
+            }
+        }
+
+        &[data-controls=next] {
+            img {
+                margin-right: -45px
+            }
+        }
+    }
+}
+
+.tns-slider {
+
+    &#sayilarla-hibeler-slider {
+
+        .tns-item {
+            transform: scale(.75);
+        }
+
+        .active--slide {
+            transform: scale(1);
+        }
+
+    }
+
+    .yesil-yuvarlak {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(#00b159, #00b159);
+
+
+        .sayi {
+            color: $white;
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 800;
+
+            span {
+                font-size: 3rem;
+                font-weight: 800;
+            }
+        }
+
+        .spot {
+            color: $white;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 .tns-nav {
@@ -176,6 +327,35 @@ a {
             background-color: rgb(var(--slider-dot));
         }
     }
+}
+
+.kunye {
+    .dropdown-toggle {
+        border: 0;
+        background: none;
+        color: $sv-mavi;
+        font-size: 1rem;
+        font-weight: 700;
+        width: 290px;
+        text-align: center;
+        position: relative;
+        padding: .5rem;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 2px;
+            background: $mavi-grad;
+        }
+    }
+
+    .dropup .dropdown-toggle::after {
+        display: none;
+    }
+
 }
 
 button:focus {

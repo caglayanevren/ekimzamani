@@ -31,6 +31,5 @@
     "parcel-plugin-purgecss": "^2.1.3",
     "replace-in-file": "^5.0.2",
     "sass": "^1.25.0"
-  },
-  "peerDependencies": {}
+  }
 }
