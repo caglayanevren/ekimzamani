@@ -9,7 +9,7 @@ import {
 var anaSlider = tns({
 	container: '#anaSlider',
 	items: 1,
-	autoplay: false,
+	autoplay: true,
 	autoplayButtonOutput: false,
 	mouseDrag: true,
 	nav: true,
@@ -25,7 +25,7 @@ var sayilarlaHibelerSlider = tns({
 	mouseDrag: true,
 	nav: false,
 	controls: true,
-	controlsText: ["<img src='prev.png' style='width:25px;height:auto;' alt=''>", "<img src='next.png' style='width:25px;height:auto;' alt=''>"],
+	controlsText: ["<i class='fas fa-2x fa-arrow-left color-kahve'></i>", "<i class='fas fa-2x fa-arrow-right color-kahve'></i>"],
 	responsive: {
 		425: {
 			gutter: 10,
