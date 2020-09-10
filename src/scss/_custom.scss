@@ -142,7 +142,7 @@ a {
 
         @include xl {
             text-align: center;
-            box-shadow: 0px -8px 15px -5px #bbb;
+            box-shadow: 0px -8px 15px -5px var(--sv-nav-boxshadow-color);
         }
 
         &::before {
@@ -159,7 +159,7 @@ a {
         }
 
         a.dropdown-item {
-            color: $sv-kahve;
+            color: var(--sv-nav-metin);
             font-weight: 600;
 
             &:hover,
@@ -167,6 +167,11 @@ a {
                 color: $sv-yesil;
             }
         }
+    }
+
+    .dropdown-toggle {
+        display: flex;
+        align-items: center;
     }
 
     @include xl {
@@ -186,7 +191,7 @@ a {
 
         #menuitem1 {
             a.nav-link {
-                color: $sv-yesil;
+                color: var(--sv-nav-metin-II);
                 font-weight: 700;
             }
         }
@@ -200,7 +205,7 @@ a {
             }
 
             a.nav-link {
-                color: $sv-kahve;
+                color: var(--sv-nav-metin);
                 font-weight: 500;
             }
         }
@@ -233,6 +238,33 @@ a {
 
     }
 
+    .navbar-brand {
+        img {
+            &.unscrolled-image {
+                display: inline;
+            }
+
+            &.scrolled-image {
+                display: none;
+            }
+        }
+    }
+}
+
+body.scrolled {
+    #nav.navbar {
+        .navbar-brand {
+            img {
+                &.unscrolled-image {
+                    display: none;
+                }
+
+                &.scrolled-image {
+                    display: inline;
+                }
+            }
+        }
+    }
 }
 
 .tns-controls {

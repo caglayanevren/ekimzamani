@@ -9,7 +9,7 @@ $sv-yesil: #00b159;
 $sv-mavi: #00529f;
 $sv-mavi-80: rgba(#00529f, .8);
 
-$yesil-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 177, 89, 1) 25%, rgba(0, 177, 89, 1) 75%, rgba(0, 0, 0, 0) 100%);
+$yesil-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(var(--yesil-grad), 1) 25%, rgba(var(--yesil-grad), 1) 75%, rgba(0, 0, 0, 0) 100%);
 $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%, rgba(0, 82, 159, 1) 75%, rgba(0, 0, 0, 0) 100%);
 
 :root {
@@ -17,7 +17,20 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
     --navbar-back-color: #f9f9f9;
     --hamburger-line-color: #00529f;
     --slider-dot: 0, 177, 89;
+    --yesil-grad: 0, 177, 89;
     --navbar-border-bottom: #888993;
+    --sv-nav-metin: #a79989;
+    --sv-nav-metin-II: #00b159;
+    --sv-nav-boxshadow-color: #bbbbbb;
+
+    body.scrolled {
+        --navbar-back-color: #00b159;
+        --sv-nav-metin: #FFFFFF;
+        --sv-nav-metin-II: #FFFFFF;
+        --yesil-grad: 255, 255, 255;
+        --sv-nav-boxshadow-color: #FFFFFF;
+        --hamburger-line-color: #FFFFFF;
+    }
 }
 
 /*breakpoint variables*/
