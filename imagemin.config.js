@@ -12,9 +12,12 @@ module.exports = {
         "quality": [0.25, 0.5]
     },
     "svgo": {
-        "plugins": [
-            {"removeViewBox": false},
-            {"cleanupIDs": false},
+        "plugins": [{
+                "removeViewBox": false
+            },
+            {
+                "cleanupIDs": false
+            },
         ]
     },
     "webp": {

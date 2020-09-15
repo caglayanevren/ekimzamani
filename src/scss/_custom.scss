@@ -271,6 +271,7 @@ body.scrolled {
     position: absolute;
     top: calc(50% - 14px);
     width: calc(100% - 30px);
+    outline: none;
 
     @include max-sm {
         width: calc(100% - 60px);

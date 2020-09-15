@@ -5,10 +5,9 @@ window.$ = $;
 import "./modernizr";
 import "bootstrap";
 import "popper.js";
-import Handlebars from "handlebars";
 
 ///////////////// fixed menu on scroll for desktop
-$(window).scroll(function () {
+$(window).on("scroll", function () {
     if ($(this).scrollTop() > 74) {
         $('#nav.navbar').addClass("fixed-top");
         var navbarHeight = $('#nav.navbar').outerHeight();
@@ -25,30 +24,18 @@ $(window).scroll(function () {
 // end if
 
 $(window).on("load", function () {
+    "use strict";
     const hamburger = document.querySelector(".hamburger");
     const collapseMenu = document.getElementById("navbars");
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("is-active");
         collapseMenu.classList.toggle("show");
     });
-});
-
-$(window).on('load', function () {
-    "use strict";
     var viewportWidth = window.innerWidth;
     if (viewportWidth > 1199) {
-        $('.dropdown').mouseover(function () {
-            $(this).addClass('show');
-            $(this).children('.dropdown-menu').addClass('show');
-            $(this).children('a').attr('aria-expanded', 'true');
-        }).mouseout(function () {
-            $(this).removeClass('show');
-            $(this).children('.dropdown-menu').removeClass('show');
-            $(this).children('a').attr('aria-expanded', 'false');
+        $(".dropdown").on("mouseenter mouseleave", function () {
+            $(this).toggleClass("show");
+            $(this).children(".dropdown-menu").toggleClass("show");
         });
     }
-});
-
-Handlebars.registerHelper('scrolled', function (isScrolled) {
-    return isScrolled = $('body').hasClass('scrolled');
 });
