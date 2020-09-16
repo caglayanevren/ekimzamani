@@ -148,7 +148,7 @@ fs.readdir(`./${enDir}`, (err, files) => {
         {from:'(srcset=")([^ ]+\.jpg")', to:`$1../${staticDir}/$2`},
         {from:'(srcset=")([^ ]+\.png")', to:`$1../${staticDir}/$2`},
         {from:'(href=")en/([^ ]+\.html")', to:'$1$2'},
-        //{from:'(<a href=")([^ ]+\.html" class="nav-link" id="trtoen">TR</a>)', to:'$1../$2',},
+        {from:'(<a class="nav-link" href=")(index.html"><div>TR</div></a>)', to:'$1../$2',},
         {from:'(href=")(pdf\/[^ ]+\.pdf")', to:'$1../$2'},
     ]
 
