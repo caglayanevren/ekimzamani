@@ -198,7 +198,8 @@ a {
 
         #menuitem2,
         #menuitem3,
-        #menuitem4 {
+        #menuitem4,
+        #menuitem5 {
             @include xl {
                 display: flex;
                 align-items: center;
@@ -206,8 +207,28 @@ a {
 
             a.nav-link {
                 color: var(--sv-nav-metin);
+                font-size: 0.8rem;
                 font-weight: 500;
             }
+        }
+
+        #menuitem5 {
+            position: relative;
+
+            a.nav-link {
+                color: #FFF;
+            }
+        }
+
+        #menuitem5:before {
+            content: "";
+            background-color: var(--sv-lang-back);
+            border-radius: 50%;
+            position: absolute;
+            top: calc(50% - 12px);
+            left: calc(50% - 13px);
+            width: 25px;
+            height: 25px;
         }
 
         a.nav-link div {

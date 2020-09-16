@@ -22,6 +22,7 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
     --sv-nav-metin: #a79989;
     --sv-nav-metin-II: #00b159;
     --sv-nav-boxshadow-color: #bbbbbb;
+    --sv-lang-back: #00b159;
 
     body.scrolled {
         --navbar-back-color: #00b159;
@@ -30,6 +31,7 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
         --yesil-grad: 255, 255, 255;
         --sv-nav-boxshadow-color: #FFFFFF;
         --hamburger-line-color: #FFFFFF;
+        --sv-lang-back: #00529f;
     }
 }
 

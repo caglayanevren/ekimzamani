@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ language }}">
+<html lang="{{#eq language 'tr'}}tr{{else}}en{{/eq}}">
 {{> head}}
 
-<body>
+<body {{#if bodyClass}}class="{{ bodyClass }}" {{/if}}>
+    {{#eq language 'tr'}}
     {{> browser-upgrade-tr}}
     <header>
         {{> sabanci-vakfi-header}}
         {{> navigasyon}}
     </header>
+    {{else}}
+    {{> browser-upgrade-en}}
+    <header>
+        {{> sabanci-vakfi-header}}
+        {{> navigation}}
+    </header>
+    {{/eq}}
+    <!-- /main-container -->
     <!-- /main-container -->
     {{#block "main"}}
     {{/block}}
