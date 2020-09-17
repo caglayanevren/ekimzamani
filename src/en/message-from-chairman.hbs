@@ -3,13 +3,14 @@ language: en
 title: Başkan'ın Mesajı
 description:
 script: ../js/content/baskanin-mesaji.js
+langlink: ../baskanin-mesaji.hbs
 ---
 
 {{#extend "base"}}
 {{#content "main"}}
 
 <main>
-    <div class="container-fluid" style="background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/baskanin-mesaji.jpg); background-position-x:right;background-position-y:top; background-repeat:no-repeat; background-size:cover;">
+    <div class="container-fluid" id="baskanin-mesaji-back">
         <div class="container px-0">
             <img src="../images/baskanin-mesaji.jpg" class="img-fluid" alt="Güler Sabancı">
         </div>

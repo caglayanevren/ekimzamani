@@ -124,6 +124,50 @@ a {
     color: $sv-yesil;
 }
 
+html[lang=en] {
+    #nav.navbar {
+        #menuitem1 {
+            .dropdown-menu {
+                left: calc(50% - 135px);
+            }
+        }
+
+        #menuitem3 {
+            .dropdown-menu {
+                left: calc(50% - 228px);
+            }
+        }
+
+        #menuitem4 {
+            .dropdown-menu {
+                left: calc(50% - 90px);
+            }
+        }
+    }
+}
+
+html[lang=tr] {
+    #nav.navbar {
+        #menuitem1 {
+            .dropdown-menu {
+                left: calc(50% - 135px);
+            }
+        }
+
+        #menuitem3 {
+            .dropdown-menu {
+                left: calc(50% - 170px);
+            }
+        }
+
+        #menuitem4 {
+            .dropdown-menu {
+                left: calc(50% - 90px);
+            }
+        }
+    }
+}
+
 #nav.navbar {
     z-index: 999;
     width: 100%;
@@ -420,6 +464,38 @@ body.scrolled {
         display: none;
     }
 
+    .dropup {
+        .dropdown-menu {
+            font-family: "Montserrat", sans-serif;
+            font-size: .65rem;
+            text-align: center;
+            width: 292px;
+            padding: 1rem 1rem 0;
+            margin-bottom: 20px;
+            box-shadow: 0px 15px 20px -5px #ccc;
+        }
+
+        .dropdown-menu::after {
+            content: "";
+            position: absolute;
+            left: calc(50% - 15px);
+            top: auto;
+            width: 0;
+            height: 0;
+            border-color: #FFF transparent transparent;
+            border-style: solid;
+            border-width: 15px 15px 0px;
+            z-index: 9999;
+        }
+    }
+}
+
+#baskanin-mesaji-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/baskanin-mesaji.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 button:focus {
