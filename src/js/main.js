@@ -6,8 +6,42 @@ import "./modernizr";
 import "bootstrap";
 import "popper.js";
 
+// ChangeFontSize
+$(function () {
+    "use strict";
+
+    function changeFont(fontSize) {
+        return function () {
+            $("p").css('font-size', fontSize + 'px');
+            $("h4").css('font-size', fontSize + 'px');
+            $("h5").css('font-size', fontSize + 'px');
+            $("h6").css('font-size', fontSize + 'px');
+            sessionStorage.setItem('fSize', fontSize);
+        };
+    }
+    var normalFont = changeFont(16),
+        mediumFont = changeFont(18),
+        largeFont = changeFont(20);
+    $('.js-font-decrease').on('click', function () {
+        normalFont();
+    });
+    $('.js-font-normal').on('click', function () {
+        mediumFont();
+    });
+    $('.js-font-increase').on('click', function () {
+        largeFont();
+    });
+    if (sessionStorage.length !== 0) {
+        $("p").css('font-size', sessionStorage.getItem('fSize') + 'px');
+        $("h4").css('font-size', sessionStorage.getItem('fSize') + 'px');
+        $("h5").css('font-size', sessionStorage.getItem('fSize') + 'px');
+        $("h6").css('font-size', sessionStorage.getItem('fSize') + 'px');
+    }
+});
+
 ///////////////// fixed menu on scroll for desktop
 $(window).on("scroll", function () {
+    "use strict";
     if ($(this).scrollTop() > 74) {
         $('#nav.navbar').addClass("fixed-top");
         var navbarHeight = $('#nav.navbar').outerHeight();
