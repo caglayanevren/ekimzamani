@@ -1,9 +1,9 @@
 {
     "collapseAttributeWhitespace": false,
     "collapseBooleanAttributes": false,
-    "collapseWhitespace": "conservative",
+    "collapseWhitespace": "aggressive",
     "custom": [],
-    "deduplicateAttributeValues": false,
+    "deduplicateAttributeValues": true,
     "mergeScripts": false,
     "mergeStyles": false,
     "removeUnusedCss": false,
@@ -11,5 +11,5 @@
     "minifySvg": false,
     "removeEmptyAttributes": false,
     "removeRedundantAttributes": false,
-    "removeComments": false
+    "removeComments": true
 }
