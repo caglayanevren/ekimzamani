@@ -30,6 +30,23 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.odudo-bold {
+    font-family: 'odudo_slabbold' !important;
+}
+
+.odudo-semibold {
+    font-family: 'odudo_slabsemi_bold' !important;
+}
+
+.odudo-light {
+    font-family: 'odudo_slablight' !important;
+}
+
 .light {
     font-weight: 300 !important;
 }
@@ -518,6 +535,14 @@ body.scrolled {
     background-size: cover;
 }
 
+#engelsiz-fen-ogretimi-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/engelsiz-fen-ogretimi/engelsiz-fen-ogretimi-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 button:focus {
     outline: none !important;
 }
@@ -587,7 +612,18 @@ a:hover {
     overflow-y: scroll;
 
     svg {
-        min-width: 750px;
+        min-width: 720px;
+    }
+}
+
+.content-box {
+    margin: 15px 0;
+    padding: 20px;
+    border: 2px dotted $sv-yesil;
+
+    span {
+        font-weight: 700;
+        color: $sv-yesil;
     }
 }
 
