@@ -13,6 +13,7 @@ $(function () {
     function changeFont(fontSize) {
         return function () {
             $("p").css('font-size', fontSize + 'px');
+            $("ul li").css('font-size', fontSize + 'px');
             $("h4").css('font-size', fontSize + 'px');
             $("h5").css('font-size', fontSize + 'px');
             $("h6").css('font-size', fontSize + 'px');
@@ -33,6 +34,7 @@ $(function () {
     });
     if (sessionStorage.length !== 0) {
         $("p").css('font-size', sessionStorage.getItem('fSize') + 'px');
+        $("ul li").css('font-size', sessionStorage.getItem('fSize') + 'px');
         $("h4").css('font-size', sessionStorage.getItem('fSize') + 'px');
         $("h5").css('font-size', sessionStorage.getItem('fSize') + 'px');
         $("h6").css('font-size', sessionStorage.getItem('fSize') + 'px');
