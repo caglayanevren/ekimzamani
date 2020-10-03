@@ -127,10 +127,10 @@ a {
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -3px;
     height: 2px;
     width: 100%;
-    background: $yesil-grad;
+    background: $yesil-grad-II;
 }
 
 .color-kahve {
@@ -225,7 +225,8 @@ html[lang=tr] {
 
             &:hover,
             &:focus {
-                color: $sv-yesil;
+                color: var(--sv-lang-back);
+                background: none;
             }
         }
     }
@@ -243,7 +244,7 @@ html[lang=tr] {
 
     ul.navbar-nav {
         a.nav-link {
-            font-size: 1.1rem;
+            font-size: 1.08rem;
 
             @include xl {
                 padding: 1.5rem 0.5rem;
@@ -257,6 +258,7 @@ html[lang=tr] {
             }
         }
 
+        #menuitem0,
         #menuitem2,
         #menuitem3,
         #menuitem4,
@@ -270,6 +272,11 @@ html[lang=tr] {
                 color: var(--sv-nav-metin);
                 font-size: 0.8rem;
                 font-weight: 500;
+
+                &:hover,
+                &:focus {
+                    color: var(--sv-nav-metin-II);
+                }
             }
         }
 
@@ -312,21 +319,31 @@ html[lang=tr] {
             content: "";
             position: absolute;
             left: 0;
-            bottom: 0;
+            bottom: -3px;
             height: 2px;
             width: 100%;
             background: $yesil-grad;
         }
 
         .nav-item.dropdown.show {
-            .nav-link div::after {
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                height: 2px;
-                width: 100%;
-                background: $yesil-grad;
+            .nav-link {
+                color: var(--sv-nav-metin-II);
+
+                div::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -3px;
+                    height: 2px;
+                    width: 100%;
+                    background: $yesil-grad;
+                }
+            }
+
+            .dropdown-menu.show {
+                .dropdown-item:active {
+                    background-color: $acikgri;
+                }
             }
         }
 
@@ -594,7 +611,7 @@ a:hover {
 
 .title-top-space-for-header {
     padding-top: 100px;
-    margin-top: -75px;
+    margin-top: -35px;
 }
 
 #footer {
@@ -624,6 +641,16 @@ a:hover {
     span {
         font-weight: 700;
         color: $sv-yesil;
+    }
+}
+
+svg {
+    .svgicon {
+        cursor: pointer;
+
+        .drop {
+            display: none;
+        }
     }
 }
 

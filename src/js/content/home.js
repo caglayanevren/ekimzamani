@@ -24,23 +24,27 @@ var sayilarlaHibelerSlider = tns({
 	autoplayButtonOutput: false,
 	mouseDrag: true,
 	nav: false,
-	controls: true,
 	controlsText: ["<i class='fas fa-2x fa-arrow-left color-kahve'></i>", "<i class='fas fa-2x fa-arrow-right color-kahve'></i>"],
 	responsive: {
 		425: {
 			gutter: 10,
+			controls: false
 		},
 		576: {
-			gutter: 10
+			gutter: 10,
+			controls: false
 		},
 		768: {
-			gutter: 15
+			gutter: 15,
+			controls: false
 		},
 		992: {
-			gutter: 20
+			gutter: 20,
+			controls: true
 		},
 		1200: {
-			gutter: 30
+			gutter: 30,
+			controls: true
 		}
 	}
 
@@ -55,5 +59,11 @@ sayilarlaHibelerSlider.events.on('indexChanged', () => {
 	info.slideItems[indexCurr].classList.add('active--slide');
 });
 
-/* $(document).ready(function () {
-}); */
+var svgicons = document.querySelectorAll("g.svgicon");
+svgicons.forEach(function (svgicon) {
+	$(svgicon).on("click", function () {
+		$(this).children(".drop").toggleClass("d-block");
+	});
+})
+
+/* $(document).ready(function () {}); */

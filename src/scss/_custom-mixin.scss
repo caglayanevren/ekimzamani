@@ -10,6 +10,7 @@ $sv-mavi: #00529f;
 $sv-mavi-80: rgba(#00529f, .8);
 
 $yesil-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(var(--yesil-grad), 1) 25%, rgba(var(--yesil-grad), 1) 75%, rgba(0, 0, 0, 0) 100%);
+$yesil-grad-II: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(var(--yesil-grad-II), 1) 25%, rgba(var(--yesil-grad-II), 1) 75%, rgba(0, 0, 0, 0) 100%);
 $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%, rgba(0, 82, 159, 1) 75%, rgba(0, 0, 0, 0) 100%);
 
 :root {
@@ -18,6 +19,7 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
     --hamburger-line-color: #00529f;
     --slider-dot: 0, 177, 89;
     --yesil-grad: 0, 177, 89;
+    --yesil-grad-II: 0, 177, 89;
     --navbar-border-bottom: #888993;
     --sv-nav-metin: #a79989;
     --sv-nav-metin-II: #00b159;
@@ -29,6 +31,7 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
         --sv-nav-metin: #FFFFFF;
         --sv-nav-metin-II: #FFFFFF;
         --yesil-grad: 255, 255, 255;
+        --yesil-grad-II: 0, 177, 89;
         --sv-nav-boxshadow-color: #FFFFFF;
         --hamburger-line-color: #FFFFFF;
         --sv-lang-back: #00529f;
