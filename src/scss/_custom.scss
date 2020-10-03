@@ -199,7 +199,7 @@ html[lang=tr] {
         margin-top: 0;
         border: 0;
         border-radius: 0;
-        background-color: var(--navbar-back-color);
+        background-color: #f9f9f9;
 
         @include xl {
             text-align: center;
@@ -244,7 +244,7 @@ html[lang=tr] {
 
     ul.navbar-nav {
         a.nav-link {
-            font-size: 1.08rem;
+            font-size: 1rem;
 
             @include xl {
                 padding: 1.5rem 0.5rem;
@@ -270,8 +270,8 @@ html[lang=tr] {
 
             a.nav-link {
                 color: var(--sv-nav-metin);
-                font-size: 0.8rem;
-                font-weight: 500;
+                font-size: 0.75rem;
+                font-weight: 700;
 
                 &:hover,
                 &:focus {
