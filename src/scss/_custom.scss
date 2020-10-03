@@ -75,6 +75,14 @@ p {
     font-weight: 900 !important;
 }
 
+.font-075 {
+    font-size: 0.75rem;
+}
+
+.font-085 {
+    font-size: 0.85rem;
+}
+
 .font-125 {
     font-size: 1.25rem;
 }
@@ -133,12 +141,40 @@ a {
     background: $yesil-grad-II;
 }
 
+.border-bottom-grade {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.border-bottom-grade::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, currentColor 25%, currentColor 75%, rgba(0, 0, 0, 0) 100%);
+}
+
 .color-kahve {
     color: $sv-kahve;
 }
 
 .color-yesil {
     color: $sv-yesil;
+}
+
+.color-kadin {
+    color: var(--sv-kadin-mor);
+}
+
+.color-genc {
+    color: var(--sv-genc-yesil);
+}
+
+.color-engelli {
+    color: var(--sv-engelli-turuncu);
 }
 
 html[lang=en] {
@@ -636,11 +672,52 @@ a:hover {
 .content-box {
     margin: 15px 0;
     padding: 20px;
-    border: 2px dotted $sv-yesil;
+    color: $white;
+    font-weight: 500;
+
+    &.mor-box {
+        background-color: var(--sv-kadin-mor);
+    }
+
+    &.yesil-box {
+        background-color: var(--sv-genc-yesil);
+    }
+
+    &.turuncu-box {
+        background-color: var(--sv-engelli-turuncu);
+    }
 
     span {
         font-weight: 700;
-        color: $sv-yesil;
+    }
+}
+
+.below-the-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    align-items: end;
+
+    @include max-md {
+        grid-template-columns: 1fr;
+
+        .font-resizer {
+            order: 3;
+            margin-top: 10px;
+        }
+
+        .category-icon {
+            order: 1;
+        }
+
+        .sm-icons {
+            order: 2;
+        }
+    }
+
+    svg {
+        width: 150px;
     }
 }
 
