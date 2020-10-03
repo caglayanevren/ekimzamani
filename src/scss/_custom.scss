@@ -674,6 +674,7 @@ a:hover {
     padding: 20px;
     color: $white;
     font-weight: 500;
+    text-align: center;
 
     &.mor-box {
         background-color: var(--sv-kadin-mor);
@@ -685,6 +686,25 @@ a:hover {
 
     &.turuncu-box {
         background-color: var(--sv-engelli-turuncu);
+
+        &+.content-box-alt {
+            color: var(--sv-engelli-turuncu);
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            margin-top: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-engelli-turuncu) 25%, var(--sv-engelli-turuncu) 75%, rgba(0, 0, 0, 0) 100%);
+                bottom: -3px
+            }
+        }
     }
 
     span {
