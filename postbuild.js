@@ -5,7 +5,7 @@ const escapeRegExp = require("lodash.escaperegexp");
 
 // the directory in which you're outputting your build
 let baseDir = "dist";
-let enDir = "dist/en";
+//let enDir = "dist/en";
 // the name for the directory where your static files will be moved to
 let staticDir = "assets/images";
 // the directory where your built files (css and JavaScript) will be moved  to
@@ -135,7 +135,7 @@ fs.readdir(`./${baseDir}`, (err, files) => {
     });
 });
 
-fs.readdir(`./${enDir}`, (err, files) => {
+/* fs.readdir(`./${enDir}`, (err, files) => {
     let enhtml = []
     let fromtoRegExp = [
         {from:'(src=")([^ ]+\.js")', to:`$1../${assetsDir}/$2`},
@@ -178,4 +178,4 @@ fs.readdir(`./${enDir}`, (err, files) => {
         })
     })
 
-});
+}); */
