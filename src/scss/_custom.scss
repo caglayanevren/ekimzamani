@@ -177,6 +177,15 @@ a {
     color: var(--sv-engelli-turuncu);
 }
 
+.color-icons {
+    color: var(--sv-icons);
+
+    &:hover,
+    &:focus {
+        color: $black;
+    }
+}
+
 html[lang=en] {
     #nav.navbar {
         #menuitem1 {
@@ -322,6 +331,11 @@ html[lang=tr] {
             a.nav-link {
                 color: #FFF;
 
+                &:hover,
+                &:focus {
+                    color: #FFF;
+                }
+
                 @include max-xl {
                     &:hover div::after {
                         background: none;
@@ -335,8 +349,8 @@ html[lang=tr] {
             background-color: var(--sv-lang-back);
             border-radius: 50%;
             position: absolute;
-            top: calc(50% - 12px);
-            left: calc(50% - 13px);
+            top: calc(50% - 13px);
+            left: calc(50% - 12px);
             width: 25px;
             height: 25px;
 
