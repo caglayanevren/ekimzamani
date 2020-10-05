@@ -61,7 +61,7 @@ sayilarlaHibelerSlider.events.on('indexChanged', () => {
 
 var svgicons = document.querySelectorAll("g.svgicon");
 svgicons.forEach(function (svgicon) {
-	$(svgicon).on("click", function () {
+	$(svgicon).on("click mouseenter mouseleave", function () {
 		$(this).children(".drop").toggleClass("d-block");
 	});
 })

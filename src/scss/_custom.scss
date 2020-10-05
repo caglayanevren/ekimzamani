@@ -297,6 +297,11 @@ html[lang=tr] {
         }
 
         #menuitem1 {
+            @include xl {
+                display: flex;
+                align-items: center;
+            }
+
             a.nav-link {
                 color: var(--sv-nav-metin-II);
                 font-weight: 700;
