@@ -5,6 +5,7 @@
         url('../fonts/odudo-slab-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
@@ -14,7 +15,7 @@
         url('../fonts/odudo-slab-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
 @font-face {
@@ -23,7 +24,7 @@
         url('../fonts/odudo-slab-semi-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
+    font-display: swap;
 }
 
 body {
@@ -738,6 +739,10 @@ a:hover {
     margin-bottom: 50px;
     align-items: end;
 
+    @include max-sm {
+        margin-top: -20vw;
+    }
+
     @include max-md {
         grid-template-columns: 1fr;
 
@@ -757,6 +762,10 @@ a:hover {
 
     svg {
         width: 150px;
+
+        @include max-sm {
+            width: 27vw;
+        }
     }
 }
 
