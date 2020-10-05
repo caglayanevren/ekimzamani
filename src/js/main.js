@@ -69,9 +69,17 @@ $(window).on("load", function () {
     });
     var viewportWidth = window.innerWidth;
     if (viewportWidth > 1199) {
-        $(".dropdown").on("mouseenter mouseleave", function () {
+        $(".dropdown").on("click", function () {
             $(this).toggleClass("show");
             $(this).children(".dropdown-menu").toggleClass("show");
+        });
+        $(".dropdown").on("mouseenter", function () {
+            $(this).addClass("show");
+            $(this).children(".dropdown-menu").addClass("show");
+        });
+        $(".dropdown").on("mouseleave", function () {
+            $(this).removeClass("show");
+            $(this).children(".dropdown-menu").removeClass("show");
         });
     }
 });
