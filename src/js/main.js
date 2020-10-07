@@ -12,6 +12,7 @@ $(function () {
 
     function changeFont(fontSize) {
         return function () {
+            $(".font-resize").css('font-size', fontSize + 'px');
             $("p").css('font-size', fontSize + 'px');
             $("ul li").css('font-size', fontSize + 'px');
             $("h4").css('font-size', 1.5 * fontSize + 'px');
@@ -33,6 +34,7 @@ $(function () {
         largeFont();
     });
     if (sessionStorage.length !== 0) {
+        $(".font-resize").css('font-size', sessionStorage.getItem('fSize') + 'px');
         $("p").css('font-size', sessionStorage.getItem('fSize') + 'px');
         $("ul li").css('font-size', sessionStorage.getItem('fSize') + 'px');
         $("h4").css('font-size', 1.5 * sessionStorage.getItem('fSize') + 'px');
