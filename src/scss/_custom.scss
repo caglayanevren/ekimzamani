@@ -434,32 +434,43 @@ body.scrolled {
     }
 }
 
-.tns-controls {
-    position: absolute;
-    top: calc(50% - 15px);
-    left: 0;
-    width: 100%;
-    outline: none;
-    display: flex;
-    justify-content: space-between;
-    z-index: 1;
+body {
+    .tns-controls {
+        position: absolute;
+        top: calc(50% - 15px);
+        left: 0;
+        width: 100%;
+        outline: none;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
 
-    button {
-        background-color: transparent;
-        border: 0;
+        button {
+            background-color: transparent;
+            border: 0;
+        }
+    }
 
-        /* &[data-controls=prev] {
-            img {
-                margin-left: -45px
+    &.engelli {
+        .tns-controls {
+            button {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: calc(50% - 26.5px);
+                    left: calc(50% - 25px);
+                    width: 50px;
+                    height: 50px;
+                    background-color: $white;
+                    z-index: -1;
+                    border-radius: 50%;
+                }
             }
         }
-
-        &[data-controls=next] {
-            img {
-                margin-right: -45px
-            }
-        } */
     }
+
 }
 
 .tns-slider {
@@ -651,30 +662,6 @@ a:hover {
 
     .slide3 {
         background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/slider/slider1.jpg);
-    }
-}
-
-#engelsizFenOgretimiSlider-ow {
-    .tns-item {
-        text-align: center;
-    }
-
-    .tns-controls {
-        button {
-            position: relative;
-
-            &::before {
-                content: "";
-                position: absolute;
-                top: calc(50% - 26.5px);
-                left: calc(50% - 25px);
-                width: 50px;
-                height: 50px;
-                background-color: $white;
-                z-index: -1;
-                border-radius: 50%;
-            }
-        }
     }
 }
 
