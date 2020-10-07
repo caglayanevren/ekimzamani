@@ -63,11 +63,14 @@ $(window).on("load", function () {
     "use strict";
     const hamburger = document.querySelector(".hamburger");
     const collapseMenu = document.getElementById("navbars");
+
     hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("is-active");
         collapseMenu.classList.toggle("show");
     });
+
     var viewportWidth = window.innerWidth;
+
     if (viewportWidth > 1199) {
         $(".dropdown").on("click", function () {
             $(this).toggleClass("show");
