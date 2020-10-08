@@ -437,7 +437,7 @@ body.scrolled {
 body {
     .tns-controls {
         position: absolute;
-        top: calc(50% - 15px);
+        top: calc(50% - 40px);
         left: 0;
         width: 100%;
         outline: none;
@@ -541,7 +541,8 @@ body {
             background-color: rgb(var(--slider-dot));
         }
 
-        &[aria-controls="engelsizFenOgretimiSlider"] {
+        &[aria-controls="engelsizFenOgretimiSlider"],
+        &[aria-controls="alerjiIleYasamAkademisiSlider"] {
             --slider-dot: 247, 147, 39;
         }
     }
@@ -624,6 +625,14 @@ body {
 
 #engelsiz-fen-ogretimi-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/engelsiz-fen-ogretimi/engelsiz-fen-ogretimi-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#alerji-ile-yasam-akademisi-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/alerji-ile-yasam-akademisi/alerji-ile-yasam-akademisi-1.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
