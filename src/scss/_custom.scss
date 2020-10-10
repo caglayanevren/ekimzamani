@@ -293,11 +293,20 @@ html[lang=tr] {
     }
 
     ul.navbar-nav {
+        @include max-xl {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+        }
         a.nav-link {
             font-size: 1rem;
 
             @include xl {
                 padding: 1.5rem 0.5rem;
+            }
+
+            @include max-xl {
+                padding-top: .75rem;
+                padding-bottom: .75rem;
             }
         }
 
@@ -371,7 +380,7 @@ html[lang=tr] {
 
         }
 
-        @include max-sm {
+        @include max-xl {
             #menuitem1,#menuitem3,#menuitem4 {
                 a.nav-link {
                     display: inline-block;
