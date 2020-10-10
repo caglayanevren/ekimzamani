@@ -77,35 +77,35 @@ p {
 }
 
 .font-075 {
-    font-size: 0.75rem;
+    font-size: 0.75rem !important;
 }
 
 .font-085 {
-    font-size: 0.85rem;
+    font-size: 0.85rem !important;
 }
 
 .font-125 {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
 }
 
 .font-15 {
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
 }
 
 .font-2 {
-    font-size: 2rem;
+    font-size: 2rem !important;
 }
 
 .font-3 {
-    font-size: 3rem;
+    font-size: 3rem !important;
 }
 
 .font-4 {
-    font-size: 4rem;
+    font-size: 4rem !important;
 }
 
 .font-5 {
-    font-size: 5rem;
+    font-size: 5rem !important;
 }
 
 a {
@@ -545,8 +545,13 @@ body {
         &[aria-controls="alerjiIleYasamAkademisiSlider"] {
             --slider-dot: 247, 147, 39;
         }
-        &[aria-controls="cocuklarIcinOnceOgretmenSlider"] {
+        &[aria-controls="cocuklarIcinOnceOgretmenSlider"],
+        &[aria-controls="cokGecOlmadanIstanbulSlider"] {
             --slider-dot: 0, 177, 89;
+        }
+        &[aria-controls="gucluKadinGucluKooperatifSlider"],
+        &[aria-controls="kadinlarIsigiylaMadeniAydinlatiyorSlider"] {
+            --slider-dot: 128, 113, 179;
         }
     }
 }
@@ -611,7 +616,7 @@ body {
 }
 
 #baskanin-mesaji-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/headers/Baskan-Mesaji.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/headers/Baskan-Mesaji.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -619,7 +624,7 @@ body {
 }
 
 #hibe-programi-hakkinda-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/headers/Hibe-Programi.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/headers/Hibe-Programi.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -627,7 +632,7 @@ body {
 }
 
 #sayilarla-hibeler-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/headers/Sayilarla-Hibeler.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/headers/Sayilarla-Hibeler.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -635,7 +640,7 @@ body {
 }
 
 #engelsiz-fen-ogretimi-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/engelsiz-fen-ogretimi/engelsiz-fen-ogretimi-1.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/engelsiz-fen-ogretimi/engelsiz-fen-ogretimi-1.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -643,7 +648,7 @@ body {
 }
 
 #alerji-ile-yasam-akademisi-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/alerji-ile-yasam-akademisi/alerji-ile-yasam-akademisi-1.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/alerji-ile-yasam-akademisi/alerji-ile-yasam-akademisi-1.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -651,7 +656,39 @@ body {
 }
 
 #cocuklar-icin-once-ogretmen-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/cocuklar-icin-once-ogretmen/cocuklar-icin-once-ogretmen-1.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/cocuklar-icin-once-ogretmen/cocuklar-icin-once-ogretmen-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#guclu-kadin-guclu-kooperatif-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/guclu-kadin-guclu-kooperatif/guclu-kadin-guclu-kooperatif-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#koy-ogretmenleri-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/koy-ogretmenleri/koy-ogretmenleri-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kadinlar-isigiyla-madeni-aydinlatiyor-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/kadinlar-isigiyla-madeni-aydinlatiyor/kadinlar-isigiyla-madeni-aydinlatiyor-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cok-gec-olmadan-istanbul-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/cok-gec-olmadan-istanbul/cok-gec-olmadan-istanbul-1.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -681,15 +718,15 @@ a:hover {
     }
 
     .slide1 {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/headers/home-slider/kadin.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/images/headers/home-slider/kadin.jpg);
     }
 
     .slide2 {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/headers/home-slider/genc.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/images/headers/home-slider/genc.jpg);
     }
 
     .slide3 {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/headers/home-slider/engelli.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(/images/headers/home-slider/engelli.jpg);
     }
 }
 
@@ -859,4 +896,16 @@ svg {
     }
 }
 
+.video-button {
+    button {
+        background: none;
+        border: none;
+        padding:0;
+    }
+}
+@include min-sm {
+    .modal-dialog {
+        max-width: 85%;
+    }
+}
 /* purgecss end ignore */
