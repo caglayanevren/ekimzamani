@@ -269,6 +269,10 @@ html[lang=tr] {
             color: var(--sv-nav-metin);
             font-weight: 600;
 
+            @include max-sm {
+                font-size:80%;
+            }
+
             &:hover,
             &:focus {
                 color: var(--sv-lang-back);
@@ -365,6 +369,25 @@ html[lang=tr] {
                 left: -3px;
             }
 
+        }
+
+        @include max-sm {
+            #menuitem1,#menuitem3,#menuitem4 {
+                a.nav-link {
+                    display: inline-block;
+                    font-size:75%;
+                    &.dropdown-toggle::after {
+                        display: inline-block;
+                        margin-left: 0.9em;
+                        vertical-align: 0;
+                        content: "";
+                        border-top: 0.75em solid;
+                        border-right: 0.75em solid transparent;
+                        border-bottom: 0;
+                        border-left: 0.75em solid transparent;
+                    }
+                }
+            }
         }
 
         a.nav-link div {
