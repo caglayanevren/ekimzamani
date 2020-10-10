@@ -1,19 +1,19 @@
 /* TEAM */
-                            
+
 Evren Caglayan, Front-end Developer
-caglayanevren.github.io                          
-Twitter: @caglayanevren                         
+caglayanevren.github.io
+Twitter: @caglayanevren
 Location: Bodrum, Muğla, Türkiye
 
 Murat Özgül, Designer
 murat@muratozgul.com
 Location: Istanbul, Türkiye
-							
-                            
+
+
 /* SITE */
-                           
+
 Last update: YYYY/MM/DD 
-                            
+
 HTML5, CSS3
 Bootstrap 4, jQuery
 Parcel Bundler

@@ -451,7 +451,7 @@ body {
         }
     }
 
-    &.engelli {
+    &.kadin, &.genc, &.engelli {
         .tns-controls {
             button {
                 position: relative;
@@ -545,6 +545,9 @@ body {
         &[aria-controls="alerjiIleYasamAkademisiSlider"] {
             --slider-dot: 247, 147, 39;
         }
+        &[aria-controls="cocuklarIcinOnceOgretmenSlider"] {
+            --slider-dot: 0, 177, 89;
+        }
     }
 }
 
@@ -608,7 +611,7 @@ body {
 }
 
 #baskanin-mesaji-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/baskanin-mesaji.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/headers/Baskan-Mesaji.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -616,7 +619,15 @@ body {
 }
 
 #hibe-programi-hakkinda-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/hibe-programi-hakkinda.jpg);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/headers/Hibe-Programi.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sayilarla-hibeler-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/headers/Sayilarla-Hibeler.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -633,6 +644,14 @@ body {
 
 #alerji-ile-yasam-akademisi-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/alerji-ile-yasam-akademisi/alerji-ile-yasam-akademisi-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#cocuklar-icin-once-ogretmen-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../images/cocuklar-icin-once-ogretmen/cocuklar-icin-once-ogretmen-1.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -662,15 +681,15 @@ a:hover {
     }
 
     .slide1 {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/slider/slider1.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/headers/home-slider/kadin.jpg);
     }
 
     .slide2 {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/slider/slider1.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/headers/home-slider/genc.jpg);
     }
 
     .slide3 {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/slider/slider1.jpg);
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(/images/headers/home-slider/engelli.jpg);
     }
 }
 
@@ -721,10 +740,48 @@ a:hover {
 
     &.mor-box {
         background-color: var(--sv-kadin-mor);
+
+        &+.content-box-alt {
+            color: var(--sv-kadin-mor);
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            margin-top: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-kadin-mor) 25%, var(--sv-kadin-mor) 75%, rgba(0, 0, 0, 0) 100%);
+                bottom: -3px
+            }
+        }
     }
 
     &.yesil-box {
         background-color: var(--sv-genc-yesil);
+
+        &+.content-box-alt {
+            color: var(--sv-genc-yesil);
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            margin-top: 0;
+
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 2px;
+                background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-genc-yesil) 25%, var(--sv-genc-yesil) 75%, rgba(0, 0, 0, 0) 100%);
+                bottom: -3px
+            }
+        }
     }
 
     &.turuncu-box {
