@@ -23,3 +23,7 @@ var kadinlarIsigiylaMadeniAydinlatiyorSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(6)").addClass("active");
+});

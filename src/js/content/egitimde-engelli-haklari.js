@@ -23,3 +23,7 @@ var egitimdeEngelliHaklariSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(8)").addClass("active");
+});

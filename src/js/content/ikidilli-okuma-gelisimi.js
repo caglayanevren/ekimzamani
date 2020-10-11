@@ -23,3 +23,7 @@ var ikidilliOkumaGelisimiSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(10)").addClass("active");
+});

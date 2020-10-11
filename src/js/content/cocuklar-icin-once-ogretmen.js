@@ -23,3 +23,7 @@ var cocuklarIcinOnceOgretmenSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(3)").addClass("active");
+});

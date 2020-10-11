@@ -23,3 +23,7 @@ var cokGecOlmadanIstanbulSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(7)").addClass("active");
+});

@@ -324,6 +324,15 @@ html[lang=tr] {
                 color: var(--sv-nav-metin-II);
                 font-weight: 700;
             }
+
+            .dropdown-menu {
+                .dropdown-item {
+                    &.active {
+                        background-color: var(--sv-nav-metin);
+                        color:var(--navbar-back-color)
+                    }
+                }
+            }
         }
 
         #menuitem0,

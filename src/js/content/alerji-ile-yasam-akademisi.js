@@ -23,3 +23,7 @@ var alerjiIleYasamAkademisiSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(2)").addClass("active");
+});

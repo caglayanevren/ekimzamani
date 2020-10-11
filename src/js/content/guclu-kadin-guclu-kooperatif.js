@@ -23,3 +23,7 @@ var gucluKadinGucluKooperatifSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(4)").addClass("active");
+});

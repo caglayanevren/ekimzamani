@@ -23,3 +23,7 @@ var hayaliniTasarlayanlarSlider = tns({
         }
     }
 });
+
+$(window).on("load", function () {
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(11)").addClass("active");
+});
