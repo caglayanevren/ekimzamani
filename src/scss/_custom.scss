@@ -92,6 +92,10 @@ p {
     font-size: 1.5rem !important;
 }
 
+.font-175 {
+    font-size: 1.75rem !important;
+}
+
 .font-2 {
     font-size: 2rem !important;
 }
@@ -574,15 +578,20 @@ body {
         }
 
         &[aria-controls="engelsizFenOgretimiSlider"],
-        &[aria-controls="alerjiIleYasamAkademisiSlider"] {
+        &[aria-controls="alerjiIleYasamAkademisiSlider"], 
+        &[aria-controls="egitimdeEngelliHaklariSlider"],
+        &[aria-controls="ikidilliOkumaGelisimiSlider"] {
             --slider-dot: 247, 147, 39;
         }
         &[aria-controls="cocuklarIcinOnceOgretmenSlider"],
-        &[aria-controls="cokGecOlmadanIstanbulSlider"] {
+        &[aria-controls="cokGecOlmadanIstanbulSlider"], 
+        &[aria-controls="genclikCalismalariAkademisiSlider"], 
+        &[aria-controls="hayaliniTasarlayanlarSlider"] {
             --slider-dot: 0, 177, 89;
         }
         &[aria-controls="gucluKadinGucluKooperatifSlider"],
-        &[aria-controls="kadinlarIsigiylaMadeniAydinlatiyorSlider"] {
+        &[aria-controls="kadinlarIsigiylaMadeniAydinlatiyorSlider"],
+        &[aria-controls="yuksekovadaKadinOlmakSlider"] {
             --slider-dot: 128, 113, 179;
         }
     }
@@ -721,6 +730,46 @@ body {
 
 #cok-gec-olmadan-istanbul-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/cok-gec-olmadan-istanbul/cok-gec-olmadan-istanbul-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#egitimde-engelli-haklari-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/egitimde-engelli-haklari/egitimde-engelli-haklari-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#genclik-calismalari-akademisi-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/genclik-calismalari-akademisi/genclik-calismalari-akademisi-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#ikidilli-okuma-gelisimi-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/ikidilli-okuma-gelisimi/ikidilli-okuma-gelisimi-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hayalini-tasarlayanlar-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/hayalini-tasarlayanlar/hayalini-tasarlayanlar-1.jpg);
+    background-position-x: right;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#yuksekovada-kadin-olmak-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/yuksekovada-kadin-olmak/yuksekovada-kadin-olmak-1.jpg);
     background-position-x: right;
     background-position-y: top;
     background-repeat: no-repeat;
