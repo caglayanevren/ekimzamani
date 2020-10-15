@@ -1,27 +1,23 @@
 /* purgecss start ignore */
 @font-face {
-    font-family: 'odudo_slabbold';
-    src: url('../fonts/odudo-slab-bold-webfont.woff2') format('woff2'),
-        url('../fonts/odudo-slab-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-
-}
-
-@font-face {
-    font-family: 'odudo_slablight';
-    src: url('../fonts/odudo-slab-light-webfont.woff2') format('woff2'),
-        url('../fonts/odudo-slab-light-webfont.woff') format('woff');
+    font-family: "odudo_slabbold";
+    src: url("../fonts/odudo-slab-bold-webfont.woff2") format("woff2"), url("../fonts/odudo-slab-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'odudo_slabsemi_bold';
-    src: url('../fonts/odudo-slab-semi-bold-webfont.woff2') format('woff2'),
-        url('../fonts/odudo-slab-semi-bold-webfont.woff') format('woff');
+    font-family: "odudo_slablight";
+    src: url("../fonts/odudo-slab-light-webfont.woff2") format("woff2"), url("../fonts/odudo-slab-light-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "odudo_slabsemi_bold";
+    src: url("../fonts/odudo-slab-semi-bold-webfont.woff2") format("woff2"), url("../fonts/odudo-slab-semi-bold-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -37,15 +33,15 @@ p {
 }
 
 .odudo-bold {
-    font-family: 'odudo_slabbold' !important;
+    font-family: "odudo_slabbold" !important;
 }
 
 .odudo-semibold {
-    font-family: 'odudo_slabsemi_bold' !important;
+    font-family: "odudo_slabsemi_bold" !important;
 }
 
 .odudo-light {
-    font-family: 'odudo_slablight' !important;
+    font-family: "odudo_slablight" !important;
 }
 
 .light {
@@ -191,11 +187,14 @@ a {
     }
 }
 
-html[lang=en] {
+html[lang="en"] {
     #nav.navbar {
         #menuitem1 {
             .dropdown-menu {
                 left: calc(50% - 135px);
+            }
+            a.nav-link {
+                font-size: 0.935rem;
             }
         }
 
@@ -213,11 +212,14 @@ html[lang=en] {
     }
 }
 
-html[lang=tr] {
+html[lang="tr"] {
     #nav.navbar {
         #menuitem1 {
             .dropdown-menu {
                 left: 0;
+                @include xl {
+                    left: 193px;
+                }
             }
         }
 
@@ -274,7 +276,7 @@ html[lang=tr] {
             font-weight: 600;
 
             @include max-sm {
-                font-size:80%;
+                font-size: 80%;
             }
 
             &:hover,
@@ -298,19 +300,19 @@ html[lang=tr] {
 
     ul.navbar-nav {
         @include max-xl {
-            padding-top: .5rem;
-            padding-bottom: .5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
         }
         a.nav-link {
             font-size: 1rem;
 
             @include xl {
-                padding: 1.5rem 0.5rem;
+                padding: 1.5rem 0.8rem;
             }
 
             @include max-xl {
-                padding-top: .75rem;
-                padding-bottom: .75rem;
+                padding-top: 0.75rem;
+                padding-bottom: 0.75rem;
             }
         }
 
@@ -329,7 +331,7 @@ html[lang=tr] {
                 .dropdown-item {
                     &.active {
                         background-color: var(--sv-nav-metin);
-                        color:var(--navbar-back-color)
+                        color: var(--navbar-back-color);
                     }
                 }
             }
@@ -361,11 +363,11 @@ html[lang=tr] {
             position: relative;
 
             a.nav-link {
-                color: #FFF;
+                color: #fff;
 
                 &:hover,
                 &:focus {
-                    color: #FFF;
+                    color: #fff;
                 }
 
                 @include max-xl {
@@ -390,14 +392,48 @@ html[lang=tr] {
                 top: calc(50% - 13px);
                 left: -3px;
             }
+        }
 
+        #menuitem1 {
+            a.nav-link {
+                display: inline-block;
+                &.dropdown-toggle::after {
+                    display: inline-block;
+                    margin-left: -0.25em;
+                    vertical-align: 0.2em;
+                    content: "";
+                    border-top: 0.4em solid;
+                    border-right: 0.4em solid transparent;
+                    border-bottom: 0;
+                    border-left: 0.4em solid transparent;
+                }
+            }
+        }
+
+        #menuitem3,
+        #menuitem4 {
+            a.nav-link {
+                display: inline-block;
+                &.dropdown-toggle::after {
+                    display: inline-block;
+                    margin-left: -0.8em;
+                    vertical-align: 0.2em;
+                    content: "";
+                    border-top: 0.4em solid;
+                    border-right: 0.4em solid transparent;
+                    border-bottom: 0;
+                    border-left: 0.4em solid transparent;
+                }
+            }
         }
 
         @include max-xl {
-            #menuitem1,#menuitem3,#menuitem4 {
+            #menuitem1,
+            #menuitem3,
+            #menuitem4 {
                 a.nav-link {
                     display: inline-block;
-                    font-size:75%;
+                    font-size: 75%;
                     &.dropdown-toggle::after {
                         display: inline-block;
                         margin-left: 0.9em;
@@ -447,7 +483,6 @@ html[lang=tr] {
                 }
             }
         }
-
     }
 
     .navbar-brand {
@@ -496,7 +531,9 @@ body {
         }
     }
 
-    &.kadin, &.genc, &.engelli {
+    &.kadin,
+    &.genc,
+    &.engelli {
         .tns-controls {
             button {
                 position: relative;
@@ -515,15 +552,12 @@ body {
             }
         }
     }
-
 }
 
 .tns-slider {
-
     &#sayilarla-hibeler-slider {
-
         .tns-item {
-            transform: scale(.75);
+            transform: scale(0.75);
             transition-timing-function: ease-out;
             transition: 0.5s;
         }
@@ -533,7 +567,6 @@ body {
             transition-timing-function: ease-in;
             transition: 0.5s;
         }
-
     }
 
     .yesil-yuvarlak {
@@ -541,7 +574,6 @@ body {
         width: 100%;
         height: 100%;
         background: radial-gradient(#00b159, #00b159);
-
 
         .sayi {
             color: $white;
@@ -580,21 +612,24 @@ body {
         margin-left: 5px;
         margin-right: 5px;
         border: 0;
-        background-color: rgba(var(--slider-dot), .5);
+        background-color: rgba(var(--slider-dot), 0.5);
 
         &.tns-nav-active {
             background-color: rgb(var(--slider-dot));
         }
 
         &[aria-controls="engelsizFenOgretimiSlider"],
-        &[aria-controls="alerjiIleYasamAkademisiSlider"], 
+        &[aria-controls="engelsizFenOgretimiSlider2"],
+        &[aria-controls="alerjiIleYasamAkademisiSlider"],
         &[aria-controls="egitimdeEngelliHaklariSlider"],
         &[aria-controls="ikidilliOkumaGelisimiSlider"] {
             --slider-dot: 247, 147, 39;
         }
+        &[aria-controls="koyOgretmenleriSlider"],
+        &[aria-controls="koyOgretmenleriSlider2"],
         &[aria-controls="cocuklarIcinOnceOgretmenSlider"],
-        &[aria-controls="cokGecOlmadanIstanbulSlider"], 
-        &[aria-controls="genclikCalismalariAkademisiSlider"], 
+        &[aria-controls="cokGecOlmadanIstanbulSlider"],
+        &[aria-controls="genclikCalismalariAkademisiSlider"],
         &[aria-controls="hayaliniTasarlayanlarSlider"] {
             --slider-dot: 0, 177, 89;
         }
@@ -616,7 +651,7 @@ body {
         width: 290px;
         text-align: center;
         position: relative;
-        padding: .5rem;
+        padding: 0.5rem;
 
         &::before {
             content: "";
@@ -638,7 +673,7 @@ body {
 
         .dropdown-menu {
             font-family: "Montserrat", sans-serif;
-            font-size: .65rem;
+            font-size: 0.65rem;
             text-align: center;
             width: 290px;
             padding: 1rem 1rem 0;
@@ -646,7 +681,7 @@ body {
             box-shadow: 0px 15px 20px -5px #ccc;
 
             p {
-                margin: .65rem 0;
+                margin: 0.65rem 0;
             }
         }
 
@@ -657,7 +692,7 @@ body {
             top: auto;
             width: 0;
             height: 0;
-            border-color: #FFF transparent transparent;
+            border-color: #fff transparent transparent;
             border-style: solid;
             border-width: 15px 15px 0px;
             z-index: 9999;
@@ -822,16 +857,16 @@ a:hover {
 
 .js-font-decrease {
     font-size: 75%;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .js-font-increase {
     font-size: 125%;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .js-font-normal {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .title-top-space-for-header {
@@ -868,7 +903,7 @@ a:hover {
     &.mor-box {
         background-color: var(--sv-kadin-mor);
 
-        &+.content-box-alt {
+        & + .content-box-alt {
             color: var(--sv-kadin-mor);
             position: relative;
             display: inline-block;
@@ -883,7 +918,7 @@ a:hover {
                 width: 100%;
                 height: 2px;
                 background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-kadin-mor) 25%, var(--sv-kadin-mor) 75%, rgba(0, 0, 0, 0) 100%);
-                bottom: -3px
+                bottom: -3px;
             }
         }
     }
@@ -891,7 +926,7 @@ a:hover {
     &.yesil-box {
         background-color: var(--sv-genc-yesil);
 
-        &+.content-box-alt {
+        & + .content-box-alt {
             color: var(--sv-genc-yesil);
             position: relative;
             display: inline-block;
@@ -906,7 +941,7 @@ a:hover {
                 width: 100%;
                 height: 2px;
                 background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-genc-yesil) 25%, var(--sv-genc-yesil) 75%, rgba(0, 0, 0, 0) 100%);
-                bottom: -3px
+                bottom: -3px;
             }
         }
     }
@@ -914,7 +949,7 @@ a:hover {
     &.turuncu-box {
         background-color: var(--sv-engelli-turuncu);
 
-        &+.content-box-alt {
+        & + .content-box-alt {
             color: var(--sv-engelli-turuncu);
             position: relative;
             display: inline-block;
@@ -929,7 +964,7 @@ a:hover {
                 width: 100%;
                 height: 2px;
                 background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-engelli-turuncu) 25%, var(--sv-engelli-turuncu) 75%, rgba(0, 0, 0, 0) 100%);
-                bottom: -3px
+                bottom: -3px;
             }
         }
     }
@@ -990,12 +1025,28 @@ svg {
     button {
         background: none;
         border: none;
-        padding:0;
+        padding: 0;
     }
 }
 @include min-sm {
-    .modal-dialog {
-        max-width: 85%;
+    .modal {
+        height: 90vh;
+        .modal-dialog {
+            position: relative;
+            max-width: unset;
+            height: 100%;
+            .modal-content {
+                height: 100%;
+                .modal-body {
+                    height: calc(100% - 100px);
+                    flex: unset;
+                    text-align: center;
+                    video {
+                        height: 100%;
+                    }
+                }
+            }
+        }
     }
 }
 /* purgecss end ignore */

@@ -1,10 +1,8 @@
 import "../main";
-import {
-    tns
-} from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
 var cocuklarIcinOnceOgretmenSlider = tns({
-    container: '#cocuklarIcinOnceOgretmenSlider',
+    container: "#cocuklarIcinOnceOgretmenSlider",
     items: 1,
     autoplay: true,
     autoplayButtonOutput: false,
@@ -15,15 +13,15 @@ var cocuklarIcinOnceOgretmenSlider = tns({
     responsive: {
         0: {
             controls: false,
-            arrowKeys: true
+            arrowKeys: true,
         },
         576: {
             controls: true,
-            arrowKeys: true
-        }
-    }
+            arrowKeys: true,
+        },
+    },
 });
 
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(3)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(2)").addClass("active");
 });

@@ -1,10 +1,8 @@
 import "../main";
-import {
-    tns
-} from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
 var egitimdeEngelliHaklariSlider = tns({
-    container: '#egitimdeEngelliHaklariSlider',
+    container: "#egitimdeEngelliHaklariSlider",
     items: 1,
     autoplay: true,
     autoplayButtonOutput: false,
@@ -15,15 +13,15 @@ var egitimdeEngelliHaklariSlider = tns({
     responsive: {
         0: {
             controls: false,
-            arrowKeys: true
+            arrowKeys: true,
         },
         576: {
             controls: true,
-            arrowKeys: true
-        }
-    }
+            arrowKeys: true,
+        },
+    },
 });
 
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(8)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(4)").addClass("active");
 });

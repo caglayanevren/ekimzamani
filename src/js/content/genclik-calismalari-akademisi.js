@@ -1,10 +1,8 @@
 import "../main";
-import {
-    tns
-} from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
 var genclikCalismalariAkademisiSlider = tns({
-    container: '#genclikCalismalariAkademisiSlider',
+    container: "#genclikCalismalariAkademisiSlider",
     items: 1,
     autoplay: true,
     autoplayButtonOutput: false,
@@ -15,15 +13,15 @@ var genclikCalismalariAkademisiSlider = tns({
     responsive: {
         0: {
             controls: false,
-            arrowKeys: true
+            arrowKeys: true,
         },
         576: {
             controls: true,
-            arrowKeys: true
-        }
-    }
+            arrowKeys: true,
+        },
+    },
 });
 
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(9)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(6)").addClass("active");
 });
