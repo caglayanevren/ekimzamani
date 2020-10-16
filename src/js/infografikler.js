@@ -8,6 +8,7 @@ export default function infografikler() {
         autoplayButtonOutput: false,
         mouseDrag: true,
         controlsText: ["<i class='fas fa-2x fa-arrow-left color-kahve'></i>", "<i class='fas fa-2x fa-arrow-right color-kahve'></i>"],
+        navPosition: "bottom",
         responsive: {
             0: {
                 gutter: 5,
