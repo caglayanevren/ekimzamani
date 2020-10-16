@@ -1,13 +1,10 @@
-import {
-    tns
-} from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
 export default function infografikler() {
-
     var sayilarlaHibelerSlider = tns({
-        container: '#sayilarla-hibeler-slider',
+        container: "#sayilarla-hibeler-slider",
         items: 3,
-        autoplay: false,
+        autoplay: true,
         autoplayButtonOutput: false,
         mouseDrag: true,
         nav: false,
@@ -15,39 +12,37 @@ export default function infografikler() {
         responsive: {
             0: {
                 gutter: 5,
-                controls: false
+                controls: false,
             },
             425: {
                 gutter: 10,
-                controls: false
+                controls: false,
             },
             576: {
                 gutter: 10,
-                controls: false
+                controls: false,
             },
             768: {
                 gutter: 15,
-                controls: false
+                controls: false,
             },
             992: {
                 gutter: 20,
-                controls: true
+                controls: true,
             },
             1200: {
                 gutter: 30,
-                controls: true
-            }
-        }
-
+                controls: true,
+            },
+        },
     });
 
-    sayilarlaHibelerSlider.getInfo().slideItems[sayilarlaHibelerSlider.getInfo().index + 1].classList.add('active--slide');
-    sayilarlaHibelerSlider.events.on('indexChanged', () => {
+    sayilarlaHibelerSlider.getInfo().slideItems[sayilarlaHibelerSlider.getInfo().index + 1].classList.add("active--slide");
+    sayilarlaHibelerSlider.events.on("indexChanged", () => {
         const info = sayilarlaHibelerSlider.getInfo();
         const indexPrev = info.indexCached + 1;
         const indexCurr = info.index + 1;
-        info.slideItems[indexPrev].classList.remove('active--slide');
-        info.slideItems[indexCurr].classList.add('active--slide');
+        info.slideItems[indexPrev].classList.remove("active--slide");
+        info.slideItems[indexCurr].classList.add("active--slide");
     });
-
 }
