@@ -10,7 +10,7 @@ export default function svgicon() {
         $(svgicon).on("mouseleave", function () {
             $(this).children(".drop").removeClass("d-block");
         });
-    })
+    });
 }
 
 //////////////////////////////////// pure JS
