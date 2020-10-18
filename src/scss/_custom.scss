@@ -26,6 +26,17 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+.skip-link {
+    position: absolute;
+    top: -10em;
+    left: 0;
+    padding: 1em 10em;
+    background: #ddd;
+
+    &:focus {
+        top: 0;
+    }
+}
 
 p {
     margin-top: 1rem;
@@ -191,7 +202,7 @@ html[lang="en"] {
     #nav.navbar {
         #menuitem1 {
             .dropdown-menu {
-                left: calc(50% - 135px);
+                left: 247px;
             }
             a.nav-link {
                 font-size: 0.935rem;
@@ -218,7 +229,7 @@ html[lang="tr"] {
             .dropdown-menu {
                 left: 0;
                 @include xl {
-                    left: 193px;
+                    left: 180px;
                 }
             }
         }
@@ -387,6 +398,7 @@ html[lang="tr"] {
             left: calc(50% - 12px);
             width: 25px;
             height: 25px;
+            z-index: -1;
 
             @include max-xl {
                 top: calc(50% - 13px);
@@ -820,9 +832,9 @@ body {
     background-size: cover;
 }
 
-button:focus {
+/* button:focus {
     outline: none !important;
-}
+} */
 
 a:hover {
     span {

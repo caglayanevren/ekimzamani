@@ -10,6 +10,31 @@ langlink: ../sayilarla-hibeler.hbs
 {{#content "main"}}
 
 <main>
+    <div class="container-fluid" id="sayilarla-hibeler-back">
+        <div class="container px-0">
+            <img src="../images/headers/Sayilarla-Hibeler.jpg" class="img-fluid" alt="Sarı bir kartonun üzerinde bir bölme işlemini gösteren sayılar var. Bölüm ve kalan yerine işleme uygun sayıda tuzlu fıstık koyulmuş. Kartonun kenarlarında, bölme işlemi öğrenmekte olan çocukların elleri var.">
+        </div>
+    </div>
+
+    <div class="container my-4" id="main-content">
+        {{> fontResizer}}
+        <div class="row">
+            <div class="col-12 text-center title-top-space-for-header" id="grant-programs-map">
+                <h6 class="border-bottom-yesil color-yesil bold mb-3">GRANT PROGRAMS MAP 2019-2020</h6>
+            </div>
+            <div class="col-12 text-center my-5">
+                {{> hibe-programi-haritasi}}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center title-top-space-for-header" id="infographics">
+                <h6 class="border-bottom-yesil color-yesil bold mb-3">INFOGRAPHICS</h6>
+            </div>
+            <div class="col-12 my-5">
+                {{> infographics}}
+            </div>
+        </div>
+    </div>
 </main>
 
 {{/content}}

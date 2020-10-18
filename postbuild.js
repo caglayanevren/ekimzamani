@@ -5,7 +5,7 @@ const escapeRegExp = require("lodash.escaperegexp");
 
 // the directory in which you're outputting your build
 let baseDir = "dist";
-//let enDir = "dist/en";
+let enDir = "dist/en";
 // the name for the directory where your static files will be moved to
 let staticDir = "assets/images";
 // the directory where your built files (css and JavaScript) will be moved  to
@@ -135,47 +135,46 @@ fs.readdir(`./${baseDir}`, (err, files) => {
     });
 });
 
-/* fs.readdir(`./${enDir}`, (err, files) => {
-    let enhtml = []
+fs.readdir(`./${enDir}`, (err, files) => {
+    let enhtml = [];
     let fromtoRegExp = [
-        {from:'(src=")([^ ]+\.js")', to:`$1../${assetsDir}/$2`},
-        {from:'(href=")([^ ]+\.css")',to:`$1../${assetsDir}/$2`},
-        {from:'(src=")([^ ]+\.png")', to:`$1../${staticDir}/$2`},
-        {from:'(src=")([^ ]+\.svg")', to:`$1../${staticDir}/$2`},
-        {from:'(src=")([^ ]+\.jpg")', to:`$1../${staticDir}/$2`},
-        {from:'(href=")([^ ]+\.ico")', to:`$1../${staticDir}/$2`},
-        {from:'(srcset=")([^ ]+\.webp")', to:`$1../${staticDir}/$2`},
-        {from:'(srcset=")([^ ]+\.jpg")', to:`$1../${staticDir}/$2`},
-        {from:'(srcset=")([^ ]+\.png")', to:`$1../${staticDir}/$2`},
-        {from:'(href=")en/([^ ]+\.html")', to:'$1$2'},
-        {from:'(<a class="nav-link" href=")([^ ]+\.html"> <div>TR</div> </a>)', to:'$1../$2',},
-        {from:'(href=")(pdf\/[^ ]+\.pdf")', to:'$1../$2'},
-    ]
+        { from: '(src=")([^ ]+.js")', to: `$1../${assetsDir}/$2` },
+        { from: '(href=")([^ ]+.css")', to: `$1../${assetsDir}/$2` },
+        { from: '(src=")([^ ]+.png")', to: `$1../${staticDir}/$2` },
+        { from: '(src=")([^ ]+.svg")', to: `$1../${staticDir}/$2` },
+        { from: '(src=")([^ ]+.jpg")', to: `$1../${staticDir}/$2` },
+        { from: '(href=")([^ ]+.ico")', to: `$1../${staticDir}/$2` },
+        { from: '(srcset=")([^ ]+.webp")', to: `$1../${staticDir}/$2` },
+        { from: '(srcset=")([^ ]+.jpg")', to: `$1../${staticDir}/$2` },
+        { from: '(srcset=")([^ ]+.png")', to: `$1../${staticDir}/$2` },
+        { from: '(href=")en/([^ ]+.html)', to: "$1$2" },
+        { from: '(<a class="nav-link" href=")([^ ]+.html"> <div>TR</div> </a>)', to: "$1../$2" },
+        { from: '(href=")(pdf/[^ ]+.pdf")', to: "$1../$2" },
+    ];
 
-    files.forEach(file => {
+    files.forEach((file) => {
         if (file.match(/.+\.(html)$/)) {
-            console.log('html match', file)
-            enhtml.push(file)
+            console.log("html match", file);
+            enhtml.push(file);
         }
     });
 
-    console.log('html:', enhtml)
+    console.log("html:", enhtml);
 
-    enhtml.forEach(file => {
-        fromtoRegExp.forEach(reg => {
-                let options = {
-                    files: path.join(enDir, file),
-                    from: new RegExp(reg.from , 'g'),
-                    to: reg.to
-                }
-                try {
-                    let changedFiles = replace.sync(options);
-                    console.log('FROM: ', reg.from , '--> TO: ', reg.to);
-                    console.log('Modified files:', changedFiles.join(', '));
-                } catch (error) {
-                    console.error('Error occurred:', error);
-                }
-        })
-    })
-
-}); */
+    enhtml.forEach((file) => {
+        fromtoRegExp.forEach((reg) => {
+            let options = {
+                files: path.join(enDir, file),
+                from: new RegExp(reg.from, "g"),
+                to: reg.to,
+            };
+            try {
+                let changedFiles = replace.sync(options);
+                console.log("FROM: ", reg.from, "--> TO: ", reg.to);
+                console.log("Modified files:", changedFiles.join(", "));
+            } catch (error) {
+                console.error("Error occurred:", error);
+            }
+        });
+    });
+});

@@ -30,6 +30,7 @@ var koyOgretmenleriSlider2 = tns({
     mouseDrag: true,
     nav: true,
     navPosition: "bottom",
+    autoHeight: true,
     controlsText: ["<i class='fas fa-2x fa-arrow-left color-genc'></i>", "<i class='fas fa-2x fa-arrow-right color-genc'></i>"],
     responsive: {
         0: {

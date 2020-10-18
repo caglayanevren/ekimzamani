@@ -9,6 +9,7 @@ export default function infografikler() {
         mouseDrag: true,
         controlsText: ["<i class='fas fa-2x fa-arrow-left color-kahve'></i>", "<i class='fas fa-2x fa-arrow-right color-kahve'></i>"],
         navPosition: "bottom",
+        startIndex: 1,
         responsive: {
             0: {
                 gutter: 5,

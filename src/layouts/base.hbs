@@ -4,18 +4,21 @@
 
 <body {{#if bodyClass}}class="{{ bodyClass }}" {{/if}}>
     {{#eq language 'tr'}}
+    <a href="#main-content" class="skip-link">Ana içeriğe atla</a>
     {{> browser-upgrade-tr}}
     <header>
         {{> sabanci-vakfi-header}}
         {{> navigasyon}}
     </header>
     {{else}}
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     {{> browser-upgrade-en}}
     <header>
         {{> sabanci-vakfi-header}}
         {{> navigation}}
     </header>
     {{/eq}}
+
     <!-- /main-container -->
     <!-- /main-container -->
     {{#block "main"}}
