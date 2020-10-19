@@ -141,6 +141,7 @@ fs.readdir(`./${enDir}`, (err, files) => {
         { from: '(src=")([^ ]+.js")', to: `$1../${assetsDir}/$2` },
         { from: '(href=")([^ ]+.css")', to: `$1../${assetsDir}/$2` },
         { from: '(src=")([^ ]+.png")', to: `$1../${staticDir}/$2` },
+        { from: '(href=")([^ ]+.png")', to: `$1../${staticDir}/$2` },
         { from: '(src=")([^ ]+.svg")', to: `$1../${staticDir}/$2` },
         { from: '(src=")([^ ]+.jpg")', to: `$1../${staticDir}/$2` },
         { from: '(href=")([^ ]+.ico")', to: `$1../${staticDir}/$2` },
