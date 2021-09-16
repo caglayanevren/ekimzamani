@@ -1,15 +1,15 @@
 ﻿/* CONTENT TEAM*/
 
-Writer
+WRITER
 Yağmur Çalışkan ve Nazlı Sönmez
 
-Editor
+EDITOR
 Zeynep Arslan
 
-Translator
+TRANSLATOR
 Burçin İçdem
 
-Photographs
+PHOTOGRAPHS
 Emir Uzun
 
 /* WEB DESIGN TEAM */
