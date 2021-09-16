@@ -1,4 +1,4 @@
-/* TEAM */
+﻿/* TEAM */
 
 Evren Caglayan, Front-end Developer
 caglayanevren.github.io
@@ -12,7 +12,7 @@ Location: Istanbul, Türkiye
 
 /* SITE */
 
-Last update: YYYY/MM/DD 
+Last update: 2021/09/16 
 
 HTML5, CSS3
 Bootstrap 4, jQuery
