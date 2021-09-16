@@ -1,4 +1,18 @@
-﻿/* TEAM */
+﻿/* CONTENT TEAM*/
+
+Writer
+Yağmur Çalışkan ve Nazlı Sönmez
+
+Editor
+Zeynep Arslan
+
+Translator
+Burçin İçdem
+
+Photographs
+Emir Uzun
+
+/* WEB DESIGN TEAM */
 
 Evren Caglayan, Front-end Developer
 caglayanevren.github.io
