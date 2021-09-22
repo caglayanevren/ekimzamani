@@ -1,8 +1,8 @@
 import "../main";
 import { tns } from "tiny-slider/src/tiny-slider";
 
-var alerjiIleYasamAkademisiSlider = tns({
-    container: "#alerjiIleYasamAkademisiSlider",
+var birVarmisSurOynarmisSlider = tns({
+    container: "#birVarmisSurOynarmisSlider",
     items: 1,
     autoplay: true,
     autoplayButtonOutput: false,
