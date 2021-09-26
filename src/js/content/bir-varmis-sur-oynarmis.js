@@ -1,7 +1,7 @@
 import "../main";
-import { tns } from "tiny-slider/src/tiny-slider";
+//import { tns } from "tiny-slider/src/tiny-slider";
 
-var birVarmisSurOynarmisSlider = tns({
+/* var birVarmisSurOynarmisSlider = tns({
     container: "#birVarmisSurOynarmisSlider",
     items: 1,
     autoplay: true,
@@ -21,7 +21,7 @@ var birVarmisSurOynarmisSlider = tns({
         },
     },
 });
-
+ */
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(1)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(2)").addClass("active");
 });

@@ -1,7 +1,7 @@
 import "../main";
-import { tns } from "tiny-slider/src/tiny-slider";
+//import { tns } from "tiny-slider/src/tiny-slider";
 
-var ebeveynDestekProgramiSlider = tns({
+/* var ebeveynDestekProgramiSlider = tns({
     container: "#ebeveynDestekProgramiSlider",
     items: 1,
     autoplay: true,
@@ -20,7 +20,7 @@ var ebeveynDestekProgramiSlider = tns({
             arrowKeys: true,
         },
     },
-});
+}); */
 
 $(window).on("load", function () {
     $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(1)").addClass("active");
