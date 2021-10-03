@@ -1,8 +1,8 @@
 import "../main";
-//import { tns } from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
-/* var ebeveynDestekProgramiSlider = tns({
-    container: "#ebeveynDestekProgramiSlider",
+var kozaProjesiSlider = tns({
+    container: "#kozaProjesiSlider",
     items: 1,
     autoplay: true,
     autoplayButtonOutput: false,
@@ -20,8 +20,8 @@ import "../main";
             arrowKeys: true,
         },
     },
-}); */
+});
 
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(1)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(5)").addClass("active");
 });

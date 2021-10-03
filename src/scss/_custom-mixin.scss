@@ -4,10 +4,10 @@ $koyugri: #888993;
 $acikgri: #e7e7e9;
 $sub-header: #6e8089;
 
-$sv-kahve:#a79989;
+$sv-kahve: #a79989;
 $sv-yesil: #00b159;
 $sv-mavi: #00529f;
-$sv-mavi-80: rgba(#00529f, .8);
+$sv-mavi-80: rgba(#00529f, 0.8);
 
 $yesil-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(var(--yesil-grad), 1) 25%, rgba(var(--yesil-grad), 1) 75%, rgba(0, 0, 0, 0) 100%);
 $yesil-grad-II: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(var(--yesil-grad-II), 1) 25%, rgba(var(--yesil-grad-II), 1) 75%, rgba(0, 0, 0, 0) 100%);
@@ -17,7 +17,6 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
     --sv-header-back-color: #00529f;
     --navbar-back-color: #f9f9f9;
     --hamburger-line-color: #00529f;
-    --slider-dot: 0, 177, 89;
     --yesil-grad: 0, 177, 89;
     --yesil-grad-II: 0, 177, 89;
     --navbar-border-bottom: #888993;
@@ -30,14 +29,24 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
     --sv-genc-yesil: #00b159;
     --sv-icons: #333333;
 
+    body.kadin {
+        --slider-dot: 128, 113, 179;
+    }
+    body.genc {
+        --slider-dot: 0, 177, 89;
+    }
+    body.engelli {
+        --slider-dot: 247, 147, 39;
+    }
+
     body.scrolled {
         --navbar-back-color: #00b159;
-        --sv-nav-metin: #FFFFFF;
-        --sv-nav-metin-II: #FFFFFF;
+        --sv-nav-metin: #ffffff;
+        --sv-nav-metin-II: #ffffff;
         --yesil-grad: 255, 255, 255;
         --yesil-grad-II: 0, 177, 89;
-        --sv-nav-boxshadow-color: #FFFFFF;
-        --hamburger-line-color: #FFFFFF;
+        --sv-nav-boxshadow-color: #ffffff;
+        --hamburger-line-color: #ffffff;
         --sv-lang-back: #00529f;
         &.kadin {
             --navbar-back-color: #8071b3;
@@ -49,8 +58,6 @@ $mavi-grad: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 82, 159, 1) 25%,
             --navbar-back-color: #f79327;
         }
     }
-    
-
 }
 
 /*breakpoint variables*/

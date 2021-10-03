@@ -23,5 +23,5 @@ import "../main";
 });
  */
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(2)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(6)").addClass("active");
 });

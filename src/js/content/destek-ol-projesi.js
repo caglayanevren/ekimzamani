@@ -1,7 +1,7 @@
 import "../main";
-//import { tns } from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
-/* var destekOlProjesiSlider = tns({
+var destekOlProjesiSlider = tns({
     container: "#destekOlProjesiSlider",
     items: 1,
     autoplay: true,
@@ -20,8 +20,8 @@ import "../main";
             arrowKeys: true,
         },
     },
-}); */
+});
 
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(3)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(7)").addClass("active");
 });

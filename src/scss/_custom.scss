@@ -715,7 +715,7 @@ body {
 #baskanin-mesaji-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/headers/Baskan-Mesaji.jpg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -723,7 +723,7 @@ body {
 #hibe-programi-hakkinda-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/headers/Hibe-Programi.jpg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -731,7 +731,39 @@ body {
 #sayilarla-hibeler-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/headers/Sayilarla-Hibeler.jpg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#gucumun-farkindayim-isimin-basindayim-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/gucumun-farkindayim-isimin-basindayim/gucumun-farkindayim-isimin-basindayim-1.jpg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#dokunsal-ogrenme-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/dokunsal-ogrenme/dokunsal-ogrenme-1.jpg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bodrumdan-turkiyeye-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/bodrumdan-turkiyeye/bodrumdan-turkiyeye-1.jpg);
+    background-position-x: right;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kiz-kardesimle-gucluyum-back {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/kiz-kardesimle-gucluyum/kiz-kardesimle-gucluyum-1.jpg);
+    background-position-x: right;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -739,7 +771,7 @@ body {
 #koza-projesi-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/koza-projesi/koza-projesi-1.jpg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -747,95 +779,15 @@ body {
 #bir-varmis-sur-oynarmis-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/bir-varmis-sur-oynarmis/bir-varmis-sur-oynarmis-1.jpg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-/* #alerji-ile-yasam-akademisi-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/alerji-ile-yasam-akademisi/alerji-ile-yasam-akademisi-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#cocuklar-icin-once-ogretmen-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/cocuklar-icin-once-ogretmen/cocuklar-icin-once-ogretmen-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#guclu-kadin-guclu-kooperatif-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/guclu-kadin-guclu-kooperatif/guclu-kadin-guclu-kooperatif-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#koy-ogretmenleri-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/koy-ogretmenleri/koy-ogretmenleri-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#kadinlar-isigiyla-madeni-aydinlatiyor-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/kadinlar-isigiyla-madeni-aydinlatiyor/kadinlar-isigiyla-madeni-aydinlatiyor-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#cok-gec-olmadan-istanbul-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/cok-gec-olmadan-istanbul/cok-gec-olmadan-istanbul-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#egitimde-engelli-haklari-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/egitimde-engelli-haklari/egitimde-engelli-haklari-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#genclik-calismalari-akademisi-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/genclik-calismalari-akademisi/genclik-calismalari-akademisi-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#ikidilli-okuma-gelisimi-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/ikidilli-okuma-gelisimi/ikidilli-okuma-gelisimi-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#hayalini-tasarlayanlar-back {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/hayalini-tasarlayanlar/hayalini-tasarlayanlar-1.jpg);
-    background-position-x: right;
-    background-position-y: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 #destek-ol-projesi-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/destek-ol-projesi/destek-ol-projesi-1.jpg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -843,7 +795,7 @@ body {
 #yuksekovada-kadin-olmak-back {
     background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/yuksekovada-kadin-olmak/yuksekovada-kadin-olmak-1.jpg);
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -931,7 +883,7 @@ a:hover {
     &.mor-box {
         background-color: var(--sv-kadin-mor);
 
-        & + .content-box-alt {
+        /* & + .content-box-alt {
             color: var(--sv-kadin-mor);
             position: relative;
             display: inline-block;
@@ -948,13 +900,13 @@ a:hover {
                 background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-kadin-mor) 25%, var(--sv-kadin-mor) 75%, rgba(0, 0, 0, 0) 100%);
                 bottom: -3px;
             }
-        }
+        } */
     }
 
     &.yesil-box {
         background-color: var(--sv-genc-yesil);
 
-        & + .content-box-alt {
+        /* & + .content-box-alt {
             color: var(--sv-genc-yesil);
             position: relative;
             display: inline-block;
@@ -971,13 +923,13 @@ a:hover {
                 background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-genc-yesil) 25%, var(--sv-genc-yesil) 75%, rgba(0, 0, 0, 0) 100%);
                 bottom: -3px;
             }
-        }
+        } */
     }
 
     &.turuncu-box {
         background-color: var(--sv-engelli-turuncu);
 
-        & + .content-box-alt {
+        /* & + .content-box-alt {
             color: var(--sv-engelli-turuncu);
             position: relative;
             display: inline-block;
@@ -994,7 +946,7 @@ a:hover {
                 background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, var(--sv-engelli-turuncu) 25%, var(--sv-engelli-turuncu) 75%, rgba(0, 0, 0, 0) 100%);
                 bottom: -3px;
             }
-        }
+        } */
     }
 
     span {

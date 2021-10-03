@@ -1,8 +1,8 @@
 import "../main";
-//import {tns} from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
-/* var yuksekovadaKadinOlmakSlider = tns({
-    container: '#yuksekovadaKadinOlmakSlider',
+var yuksekovadaKadinOlmakSlider = tns({
+    container: "#yuksekovadaKadinOlmakSlider",
     items: 1,
     autoplay: true,
     autoplayButtonOutput: false,
@@ -13,15 +13,15 @@ import "../main";
     responsive: {
         0: {
             controls: false,
-            arrowKeys: true
+            arrowKeys: true,
         },
         576: {
             controls: true,
-            arrowKeys: true
-        }
-    }
-}); */
+            arrowKeys: true,
+        },
+    },
+});
 
 $(window).on("load", function () {
-    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(4)").addClass("active");
+    $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(8)").addClass("active");
 });
