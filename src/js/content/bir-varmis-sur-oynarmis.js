@@ -1,7 +1,7 @@
 import "../main";
-//import { tns } from "tiny-slider/src/tiny-slider";
+import { tns } from "tiny-slider/src/tiny-slider";
 
-/* var birVarmisSurOynarmisSlider = tns({
+var birVarmisSurOynarmisSlider = tns({
     container: "#birVarmisSurOynarmisSlider",
     items: 1,
     autoplay: true,
@@ -9,7 +9,7 @@ import "../main";
     mouseDrag: true,
     nav: true,
     navPosition: "bottom",
-    controlsText: ["<i class='fas fa-2x fa-arrow-left color-engelli'></i>", "<i class='fas fa-2x fa-arrow-right color-engelli'></i>"],
+    controlsText: ["<i class='fas fa-2x fa-arrow-left color-genc'></i>", "<i class='fas fa-2x fa-arrow-right color-genc'></i>"],
     responsive: {
         0: {
             controls: false,
@@ -21,7 +21,7 @@ import "../main";
         },
     },
 });
- */
+
 $(window).on("load", function () {
     $("#menuitem1 .dropdown-menu .dropdown-item:nth-child(6)").addClass("active");
 });
